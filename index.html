@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Charades</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Welcome Screen -->
+    <div class="screen active" id="welcome">
+      <h1>Welcome to Bible Charades 🇳🇬🙌</h1>
+      <p>Pick a category, act am sharp sharp 😄 — no talking! You get 60 seconds per round.</p>
+  
+      <div class="categories">
+        <div class="category" onclick="startGame('characters')">
+          <h2>📖 Bible Characters</h2>
+          <p>Old & New Testament heroes wey everybody sabi</p>
+        </div>
+        <div class="category" onclick="startGame('stories')">
+          <h2>🔥 Bible Stories</h2>
+          <p>Big Bible moments wey loud</p>
+        </div>
+        <div class="category" onclick="startGame('virtues')">
+          <h2>❤️ Virtues & Fruits</h2>
+          <p>Fruits & virtues to live by</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Game Screen -->
+    <div class="screen" id="game">
+      <div class="game-card">
+        <div class="timer" id="timer">60</div>
+        <div class="word" id="word">—</div>
+  
+        <div class="buttons">
+          <button class="btn-primary" onclick="nextWord()">Next</button>
+          <button class="btn-secondary" onclick="passWord()">Pass</button>
+          <button class="btn-danger" onclick="endGame()">End Game</button>
+        </div>
+      </div>
+    </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
